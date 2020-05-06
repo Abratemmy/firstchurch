@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Header from './header';
-import{ Grid,  Cell , Card, CardActions, Button,CardMenu,IconButton,CardText,CardTitle} from 'react-mdl';
 import church4 from '../images/church4.png';
 
 

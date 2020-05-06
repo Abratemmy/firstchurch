@@ -13,7 +13,7 @@ const photos=[
     {
         id: 1,
         name: 'photo 1',
-        url: image3,
+        url: "http://html.themedemo.co/rome/img/slide-1.jpg",
     },
     {
         id: 2,

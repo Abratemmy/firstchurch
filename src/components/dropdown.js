@@ -7,10 +7,10 @@ class Dropdown extends Component {
             <div className="dropdown">
                 <button className="dropbtn">About</button>
                 <div class="dropdown-content">
-                    <Link to="/">link 1</Link>
-                    <Link to="/">link 2</Link>
-                    <Link to="/">link 3</Link>
-                    <Link to="/">link 4</Link>
+                    <Link to="/about">Who We Are</Link>
+                    <Link to="/about2">What We Believe</Link>
+                    <Link to="/">Meeting Times</Link>
+                    <Link to="/contact">Contact</Link>
                 </div>
             </div>
         )
