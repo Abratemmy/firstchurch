@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
-import image4 from '../images/image4.png';
-import image1 from '../images/image1.png';
-import image3 from '../images/image3.png';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Banner from '../components/banner';
-import {Link} from 'react-router-dom';
 
 
 const photos=[
@@ -18,12 +14,12 @@ const photos=[
     {
         id: 2,
         name: 'photo 2',
-        url: image4,
+        url: "https://cdn.pixabay.com/photo/2020/03/30/17/15/funes-4984899__340.jpg",
     },
     {
         id: 3,
         name: 'photo 3',
-        url: image1,
+        url: "https://cdn.pixabay.com/photo/2017/03/02/05/14/bible-2110439__340.jpg",
     }
 ]
 
@@ -45,7 +41,7 @@ class Background extends Component {
                 <Slider {...settings} className="image-slider">
                    {photos.map(photos=>{
                         return<div className="sliding-image " key={photos.id}> 
-                            <img src={photos.url} width="100%" height="900" alt="error" className=""/>
+                            <img src={photos.url} width="100%" height="830" alt="error" className="bgimage"/>
                         </div>                         
                     })}
                 </Slider> 

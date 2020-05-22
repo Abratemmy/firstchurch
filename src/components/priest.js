@@ -8,7 +8,7 @@ import pastor5 from '../images/pastor5.jpeg';
 import pastor6 from '../images/pastor6.jpeg';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Card, CardTitle, CardImg, CardActions, CardText } from 'react-mdl';
+import { Card, CardTitle, CardActions,} from 'react-mdl';
 import Header from '../components/header';
 
 const photos=[
@@ -118,7 +118,7 @@ class Priest extends Component {
                             <CardActions style={{height: '52px', padding: '16px', background: 'rgba(0,0,0,0.2)',position:'absolute', top:'220px',
                                 display: 'flex', justifyContent: 'center' }}>
                                 <span style={{color: 'rgb(248, 51, 248)', fontSize: '24px', fontWeight: "bold",}}>
-                                    {photos.position}
+                                    {/* {photos.position} */}
                                     <div style={{fontSize:'14px', color:'black', paddingTop: '20px', paddingBottom:'40px'}}>{photos.name}</div>
                                 </span>
                             </CardActions>

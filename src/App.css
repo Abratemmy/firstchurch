@@ -129,20 +129,20 @@ body {
   transition: var(--mainTransition);
   text-align: left;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: var(--mainSpacing);
   padding-top: 30px;
+  background: rgb(129, 125, 125);
+  padding: 10px 20px 10px 20px;
 }
-.nav-links :hover {
-  color: rgba(223, 51, 157, 0.562);
+.parttwo a:hover, .parttwo a:active, .parttwo a.active {
+  color: rgb(236, 59, 168);
 }
-
 .show-nav {
   height: 50px;
   overflow: var(--mainBlack);
 }
 .nav-links li:hover{
-  background-color:  rgb(224, 116, 199);
   padding: auto;
 }
 @media screen and (min-width: 900px) {
@@ -164,7 +164,12 @@ body {
   .nav-links a {
     margin: 0 1rem;
     padding: 0.5rem 0;
+    background: none;
     /* padding-right: 30px; */
+  }
+  .dropbtn{
+    top:-15px;
+    padding: 16px;
   }
 }  
 
@@ -173,13 +178,13 @@ body {
 .dropbtn{
   background-color:transparent;
   position: relative;
-  padding: 16px;
   font-size: 16px;
   border: none;
   color: white;
-  font-weight: bold;
-  top: -15px;
-
+  font-weight: 400;
+}
+.dropbtn:hover, .dropbtn:active, .dropbtn.active{
+  color: rgb(236, 59, 168);
 }
 .dropdown{
   display: inline-block;
@@ -215,21 +220,23 @@ body {
   
 }
 /* end of dropdown of each element in the navbar */
-
+.bgimage{
+  filter: sepia(15px);
+}
 
 .banner{
  text-align:center;
  color: black;
  font-weight: bolder;
- top: -500px;
+ top: -450px;
  position:relative; 
 }
 .banner p{
   font-family: 'Tangerine', serif;
   text-shadow: 4px 4px 4px #aaa;
-  font-size: 30px;
-  color: rgb(224, 116, 199);;
-  font-weight: bold;
+  font-size: 70px;
+  color: rgb(214, 55, 177);;
+  font-weight: bolder;
 }
 .banner-overlay{
   background-color:  rgb(71, 67, 67);
@@ -274,7 +281,14 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
 }
-
+/* .galleryimage{
+  width: 80vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-row-gap: 2rem;
+  grid-column-gap: 40px;
+} */
 .service-img{
   padding: 20px 10px 5px 35px;
   width: 100%;
@@ -474,6 +488,15 @@ overflow: hidden;
 .mapcontact-form{
   padding-bottom: 10px;
 }
+.eventlinks{
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.eventlinks:hover{
+  color:  rgb(240, 85, 204);
+}
 /* @media(max-width:700){
   body{
     display: none;
@@ -542,7 +565,12 @@ overflow: hidden;
   height: 380px;
   position: relative;
   top: -170px;
+
 } 
+.linkabout{
+  color: blue;
+
+}
 .whoweare{
   padding: 0px 13% 0px 13%;
   top:-110px;
@@ -552,13 +580,19 @@ overflow: hidden;
 .aboutdropdown{
   display: block;
   text-decoration: none;
-  color: black;
+  color: rgb(36, 35, 35);
   transition: var(--mainTransition);
   text-align: left;
   font-size: 1.2rem;
   letter-spacing: var(--mainSpacing);
   padding-top: 15px;
   text-transform: capitalize;
+  font-weight: lighter;
+}
+.aboutdropdown:hover{
+  color:rgb(107, 105, 105);
+  font-size: 1.3rem ;
+  
 }
 .whowearetext{
   line-Height:30px;
@@ -569,6 +603,7 @@ overflow: hidden;
 /* css class for event start here */
 .upcomingevent{
   padding: 0px 17% 0px 17%;
+  color: rgb(245, 245, 245)
 }
   .upcomingeve{
     margin: 0 auto;
@@ -622,4 +657,33 @@ font-weight: 300;
 font-style: normal;
 padding-bottom:  10px;
 color:rgb(63, 62, 62)
+}
+
+.img-container {
+  position: relative;
+}
+.img-container img {
+  width: 100%;
+  display: block;
+  transition: var(--mainTransition);
+}
+.room-link {
+  position: absolute;
+  top: 80%;
+  left: 20%;
+  /* transform: scale(0); 
+  transition: all 0.3s linear; */
+}
+.img-container:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+.img-container:hover img {
+  opacity: 0.6;
+  /* zoom: 1; */
+}
+
+.img-container:hover .room-link {
+  transform: translate(-50%, -50%) scale(1);
+  transform: scale(0); 
+  transition: all 0.3s linear;
 }

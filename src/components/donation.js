@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import {Grid, Cell} from 'react-mdl';
-import Header from '../components/header';
 import {Link } from 'react-router-dom';
 import image9 from '../images/image9.png';
 import image10 from '../images/image10.png';
-import image11 from '../images/image11.png';
 class Donation extends Component {
     render() {
         return (
@@ -36,7 +34,7 @@ class Donation extends Component {
                             </Grid>
                         </Cell>
                         <Cell col={5}>
-                            <img src={image11} alt="image-error" width="100%" height="640"/>
+                            {/* <img src={image11} alt="image-error" width="100%" height="640"/> */}
                         </Cell>
                     </Grid>
                 </div>

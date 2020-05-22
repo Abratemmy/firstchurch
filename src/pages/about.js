@@ -11,7 +11,7 @@ import Footer from '../components/footer';
             <div className="aboutPage">
                
                 <div className="" >
-                <img src={about} alt="image not found" width="100%" height="500" className="aboutpageimg"/>
+                <img src={about} alt="not found" width="100%" height="500" className="aboutpageimg"/>
                    <p style={{top:'-270px', textAlign:'center',height:'0vh', color:'white', fontSize:'60px', position:'relative',marginBottom:'0%'}}>Who Are We</p> 
                 </div>
                <div className="whoweare">
@@ -19,10 +19,9 @@ import Footer from '../components/footer';
                        <Cell col={4}>
                            <p style={{fontSize:'20px'}}>About</p>
                            <div className="aboutdrop" style={{display:'block'}}>
-                                <Link to='/about' className="aboutdropdown">Who are we</Link>
+                                <Link to='/about' className="aboutdropdown" style={{color:'rgb(236, 59, 168)'}}>Who are we</Link>
                                 <Link to='/about2' className="aboutdropdown">What We Believe</Link>
                                 <Link to='' className="aboutdropdown">Meeting times</Link>
-                                <Link to='' className="aboutdropdown">Contact Us</Link>
                             </div>
                        </Cell>
 
@@ -36,7 +35,7 @@ import Footer from '../components/footer';
                                 </p>
                             </div>
 
-                            <img src={about1} alt="cant see image" />
+                            <img src={about1} alt="not found" />
 
                             <div className="whowearetext" style={{paddingTop:'20px'}}>
                                 <p>At the Kingdom of Chtist church, we do not claim to have all the answers or be able to provide everything your soul is longing for. But we are followers of the One who does claim to be "The Way, the Truth, and the Life" (John 14:6)... the One whom the Bible claims "holds all things together" (Colossians 1:17)... 

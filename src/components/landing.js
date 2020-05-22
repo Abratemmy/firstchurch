@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 import {FaAlignRight} from 'react-icons/fa';
-import logo from '../images/logo.png';
 import Dropdown from './dropdown';
 
 export class Landing extends Component {
@@ -30,10 +29,10 @@ export class Landing extends Component {
                <div className="nav-center">
                    {/* <div > */}
                    <div className="nav-image">
-                        <Link to="/" className="nav-header">
+                        <NavLink to="/" className="nav-header" >
                             <img src="https://cdn.pixabay.com/photo/2015/08/18/01/48/holy-893202__340.png" height="40"  alt="CHURECH"/>
                             {/* <p>My church</p> */}
-                        </Link> 
+                        </NavLink> 
                    </div>
                         <div className="parttwo">
                         <button type="button" className="nav-btn" onClick={this.handleToggle}>
@@ -45,12 +44,12 @@ export class Landing extends Component {
                    <span className="parttwo">
                    
                     <ul className={this.state.isOpen ? "nav-links show-nav": "nav-links"} >
-                        <li><Link to ="/about"> <Dropdown /></Link></li>
-                        <li ><Link to ="/ministry">Ministries</Link></li>
-                        <li ><Link to ="/audio" >Audio Sermon</Link></li>
-                        <li ><Link to ="/gallery" >Gallery</Link></li>
-                        <li ><Link to ="/upcoming" >Event</Link></li>
-                        <li ><Link to ="/upcoming" >Contact</Link></li>
+                        <li ><NavLink to ="/" className="active" >Home</NavLink></li>
+                        <li><NavLink to ="/about"> <Dropdown /></NavLink></li>
+                        <li ><NavLink to ="/audio" >Audio Sermon</NavLink></li>
+                        <li ><NavLink to ="/gallery" >Gallery</NavLink></li>
+                        <li ><NavLink to ="/upcoming" >Event</NavLink></li>
+                        <li ><NavLink to ="/contact" >Contact</NavLink></li>
                     </ul>
                     </span>
                 </div>

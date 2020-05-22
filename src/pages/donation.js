@@ -1,15 +1,13 @@
 import React, { Component } from 'react'
 
-class Ministries extends Component {
+export class Donation extends Component {
     render() {
         return (
             <div>
-                Hello from ministrieds page
+                hello from mu account
             </div>
         )
     }
 }
 
-export default Ministries
-
-
+export default Donation

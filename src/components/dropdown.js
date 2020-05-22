@@ -10,7 +10,6 @@ class Dropdown extends Component {
                     <Link to="/about">Who We Are</Link>
                     <Link to="/about2">What We Believe</Link>
                     <Link to="/">Meeting Times</Link>
-                    <Link to="/contact">Contact</Link>
                 </div>
             </div>
         )

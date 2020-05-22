@@ -54,7 +54,7 @@ class Audios extends Component {
         return (
             <div>
                 <div className="" >
-                    <img src={about} alt="image not found" width="100%" height="500" className="aboutpageimg"/>
+                    <img src={about} alt="not found" width="100%" height="500" className="aboutpageimg"/>
                    <p style={{top:'-270px', textAlign:'center',height:'0vh', color:'white', fontSize:'60px', position:'relative',marginBottom:'0%'}}>Our Sermon</p> 
                 </div>
 
@@ -86,7 +86,7 @@ class Audios extends Component {
                             {/* <ul>{this.props.displayaudio.map((contact)=>{
                                 return
                             })} </ul> */}
-                            <input type="text" value={this.state.search} onChange={this.updateSearch.bind(this)} />
+                            {/* <input type="text" value={this.state.search} onChange={this.updateSearch.bind(this)} /> */}
                         </Cell>
                     </Grid>
                     
