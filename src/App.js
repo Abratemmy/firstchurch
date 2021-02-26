@@ -1,20 +1,20 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import Router from './pages/router';
-import Landing from './components/landing';
+// import Index from './calculator';
+// import Form from './form';
+import Body from './valuejets/body';
+
 // import Navigation from './components/navigation';
 
 
 
 
-function App() {
+const App=()=> {
+
   return (
     <div className="App">
-      <Landing />
-      {/* <Navigation /> */}
-      <Router />
-      
-      
+      <Body />
     </div>
   );
 }
